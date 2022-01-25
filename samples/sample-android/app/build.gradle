@@ -51,6 +51,10 @@ android {
             debuggable true
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     packagingOptions {
         pickFirst 'lib/armeabi-v7a/libc++_shared.so'

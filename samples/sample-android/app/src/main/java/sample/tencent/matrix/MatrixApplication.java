@@ -41,6 +41,7 @@ import sample.tencent.matrix.battery.BatteryCanaryInitHelper;
 import sample.tencent.matrix.config.DynamicConfigImplDemo;
 import sample.tencent.matrix.listener.TestPluginListener;
 import sample.tencent.matrix.resource.ManualDumpActivity;
+import sample.tencent.matrix.util.BackgroundTasks;
 
 /**
  * Created by caichongyang on 17/5/18.
@@ -93,6 +94,8 @@ public class MatrixApplication extends Application {
         tracePlugin.start();
 
         MatrixLog.i(TAG, "Matrix configurations done.");
+
+        BackgroundTasks.initInstance();
 
     }
 
